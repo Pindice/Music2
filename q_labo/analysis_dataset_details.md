@@ -18,4 +18,7 @@ TODO: Faire des boîtes à moustache pour visualiser la précision / pertinence 
 
 - `segments_loudness_max` : Vecteur contenant la "max dB value" pour chaque segments
 - `segments_loudness_max_time` : Vecteur contenant le temps ou la "max dB value" est atteinte pour chaque segments
--
+
+<u>Analyse mélodique et harmonique</u>
+
+- `segments_pitches` : Matrice (k \* 12) => k: nombre de segments ; 12: hauteurs de notes possibles dans la musique occidentale ; valeurs (0 à 1) => % ? correspond à la présence / intensité de la hauteurs de notes dans le segments
