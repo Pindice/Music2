@@ -22,7 +22,7 @@ TODO: Faire des boîtes à moustache pour visualiser la précision / pertinence 
 
 <u>Autre</u>
 
-- `segments_loudness_max` : Vecteur contenant la "max dB value" pour chaque segments
+- `segments_loudness_max` : Vecteur contenant la "max dB value" pour chaque segments ATTENTION loudness (perception) != volume
 - `segments_loudness_max_time` : Vecteur contenant le temps ou la "max dB value" est atteinte pour chaque segments
 
 <u>Analyse mélodique et harmonique</u>
@@ -41,8 +41,16 @@ Pour avoir une bonne prédiction (avec un modèle ou une combinaison de pls mod�
   - beats
   - tatums
   - segments
-  - tempo => via 'songs'
+  - tempo (songs)
   - dynamique (variation de volumes) récup depuis `segments_loudness` ?!
 - une analyse mélodique et harmonique
+
   - texture => `segments_timbre`
   - `segments_pitches`
+
+- loudness(songs) ?
+- end_of_fade_in(songs) ?
+- start_of_fade_out(songs) ? => plutot utiliser duration - start_of_fade_out = fade_out_to_end ?!
+
+Pour n'utiliser qu'un seul modèle:
+=> ne pas utiliser un vecteur ni une MATRICE mais un TENSOR avec n dimensions (n = nombre de features)
