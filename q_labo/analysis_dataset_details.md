@@ -54,3 +54,4 @@ Pour avoir une bonne prédiction (avec un modèle ou une combinaison de pls mod�
 
 Pour n'utiliser qu'un seul modèle:
 => ne pas utiliser un vecteur ni une MATRICE mais un TENSOR avec n dimensions (n = nombre de features)
+TODO: Vérif si POSSIBLE avec pls dimensions de diff shape
