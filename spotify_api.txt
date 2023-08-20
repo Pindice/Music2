@@ -1,0 +1,5 @@
+https://developer.spotify.com/documentation/web-api/reference/get-several-audio-features
+
+https://developer.spotify.com/documentation/web-api/reference/get-audio-features
+
+https://developer.spotify.com/documentation/web-api/reference/get-audio-analysis
